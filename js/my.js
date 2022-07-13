@@ -18,6 +18,12 @@ $(document).ready(function(){
             let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
             $('html, body').animate({ scrollTop: scrollTop }, 600);
         }
+// TODO:Podpiąć pod to zakładkę soundcloud żeby sobie wyrównać względem reszty
+        // onTabClick(event, element) {
+        //     event.preventDefault();
+        //     let scrollTop = $(element.attr('href')).offset().top - 200;
+        //     $('html, body').animate({ scrollTop: scrollTop }, 600);
+        // }
         
         onScroll() {
             this.checkTabContainerPosition();
@@ -74,5 +80,10 @@ $(document).ready(function(){
     }
     
     new StickyNavigation();
+    
+    history.scrollRestoration = "manual";
 
+    $(window).on('beforeunload', function(){
+          $(window).scrollTop(0);
+    });
 })
