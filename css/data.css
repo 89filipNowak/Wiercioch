@@ -4,6 +4,30 @@ body {
  a {
 	 text-decoration: none;
 }
+
+.logo {
+	width: 40vw;
+}
+
+.logo__nav {
+	width: 70px;
+}
+
+.widget {
+	width: 70vw;
+	height: 300px;
+	padding: 0 5rem;
+}
+.light {
+	font-weight: 100;
+	letter-spacing: 1.5px;
+}
+
+.bold {
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+
  .et-hero-tabs, .et-slide {
 	 display: flex;
 	 flex-direction: column;
