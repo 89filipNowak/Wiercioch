@@ -1,4 +1,13 @@
+ $(window).on("load", function () {
+            $(".loader").fadeOut(1000);
+            $(".content").fadeTo( "slow" , 1, function() {
+                // Animation complete.
+              });
+          });
+    
 $(document).ready(function(){
+
+   
     class StickyNavigation {
 	
         constructor() {
