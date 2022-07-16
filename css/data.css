@@ -66,7 +66,7 @@ display: none;
 
  
 
-.audio-jungle__img, .player {
+.audio-jungle__img, .player{
 	width: 40vw;
 	max-width: 600px;
 	padding: 1rem 1rem;
@@ -75,6 +75,10 @@ display: none;
 
 .audio-jungle__img:hover {
 	transform: scale(1.1);
+}
+
+.player__YT {
+	max-width: 300px;
 }
 	
 	
@@ -130,7 +134,6 @@ display: none;
 .AJ {
 	width: 30vw;
 	max-width: 250px;
-
 }
 
 .logo__nav {
