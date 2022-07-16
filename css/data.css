@@ -3,7 +3,11 @@ box-sizing: border-box;
 }
 body {
 	font-family: "Century Gothic", 'Lato', sans-serif;
-	
+	}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
 }
 
 .content {
@@ -20,7 +24,7 @@ display: none;
 	}
 
 .loader > div {
-		height: 100px;
+	height: 100px;
 		width: 100px;
 		border: 15px solid rgb(238, 60, 72);
 		border-top-color: rgb(118, 196, 182);
@@ -38,12 +42,12 @@ display: none;
 		100% {
 			transform: rotate(360deg)
 		}
-
 	}
 
  a {
 	 text-decoration: none;
 }
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -55,16 +59,23 @@ display: none;
 	}
 
 
-/* TODO: z mosha wzięta szerokość kontenera NIE DZIAŁA */
-/* .container {
+.container {
 	max-width: 1140px;
 	margin: 0 auto;
-  } */
+  }
+
+ 
 
 .audio-jungle__img, .player {
 	width: 40vw;
+	max-width: 600px;
 	padding: 1rem 1rem;
+	transition: transform 0.3s ease-in-out;
 	}
+
+.audio-jungle__img:hover {
+	transform: scale(1.1);
+}
 	
 	
 @media screen and (max-width: 800px) {
@@ -78,39 +89,58 @@ display: none;
 		position: relative;
 		background: rgba(239, 239, 231, 0.836);
 		text-align: center;
-		
 	}
+
+	/* .logo, .AJ {
+		min-width: 70vw;
+		max-width: 470px;
+	} */
 	
 	.audio-jungle__img, .player {
-		min-width: 70vw;
+		min-width: 60vw;
 		padding: 1rem 1rem;
 	}
-
 }
 
+@media screen and (min-width: 1140px) {
+	.audio-jungle .grid {
+		display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	position: relative;
+	background: rgba(239, 239, 231, 0.836);
+	text-align: center;
+	padding: 0 0;
+	min-height: 100vh;
+	}
+
+	.audio-jungle__img {
+		max-width: 368px;
+	}
+
+	.audio-jungle .grid .last {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		position: relative;
+		background: rgba(239, 239, 231, 0.836);
+		text-align: center;
+		padding: 0 2em;
+	}
+}
 
 .logo {
 	width: 40vw;
+	max-width: 350px;
 }
 
 .AJ {
 	width: 40vw;
+	max-width: 250px;
+
 }
 
 .logo__nav {
-	width: 70px;
+	max-width: 47px;
 }
-
-/* Do zwykłej czcionki zamiast bannera */
-/* .light {
-	font-weight: 100;
-	letter-spacing: 1.5px;
-}
-
-.bold {
-	font-weight: 700;
-	letter-spacing: 1.5px;
-} */
 
  .et-hero-tabs, .et-slide {
 	 display: flex;
@@ -125,22 +155,19 @@ display: none;
 	 padding: 0 2em;
 }
 
-
-/* TODO: Odstęp między kontenerami, tło zasłania div */
-/* .et-slide {
-	padding: 180px 0;
-} */
  .et-hero-tabs h1, .et-slide h1, .grid h1 {
 	 font-size: 2rem;
 	 margin: 0;
 	 letter-spacing: 1rem;
 	 padding: 2rem 0;
 }
+
  .et-hero-tabs h3, .et-slide h3, .grid h3 {
 	 font-size: 1rem;
 	 letter-spacing: 0.3rem;
 	 opacity: 0.6;
 }
+
  .et-hero-tabs-container {
 	 display: flex;
 	 flex-direction: row;
@@ -152,10 +179,12 @@ display: none;
 	 background: #fff;
 	 z-index: 10;
 }
+
  .et-hero-tabs-container--top {
 	 position: fixed;
 	 top: 0;
 }
+
  .et-hero-tab {
 	 display: flex;
 	 justify-content: center;
@@ -166,11 +195,13 @@ display: none;
 	 transition: all 0.5s ease;
 	 font-size: 0.8rem;
 }
+
  .et-hero-tab:hover {
 	 color: white;
 	 background: rgb(118, 196, 182);
 	 transition: all 0.5s ease;
 }
+
  .et-hero-tab-slider {
 	 position: absolute;
 	 bottom: 0;
@@ -179,13 +210,16 @@ display: none;
 	 background: rgb(238, 60, 72);
 	 transition: left 0.3s ease;
 }
+
  @media (min-width: 800px) {
 	 .et-hero-tabs h1, .et-slide h1 {
 		 font-size: 3rem;
 	}
+
 	 .et-hero-tabs h3, .et-slide h3 {
 		 font-size: 1rem;
 	}
+
 	 .et-hero-tab {
 		 font-size: 1rem;
 	}
