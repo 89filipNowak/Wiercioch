@@ -90,11 +90,6 @@ display: none;
 		background: rgba(239, 239, 231, 0.836);
 		text-align: center;
 	}
-
-	/* .logo, .AJ {
-		min-width: 70vw;
-		max-width: 470px;
-	} */
 	
 	.audio-jungle__img, .player {
 		min-width: 60vw;
@@ -128,12 +123,12 @@ display: none;
 }
 
 .logo {
-	width: 40vw;
+	width: 30vw;
 	max-width: 350px;
 }
 
 .AJ {
-	width: 40vw;
+	width: 30vw;
 	max-width: 250px;
 
 }
