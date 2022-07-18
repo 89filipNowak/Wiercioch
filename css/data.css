@@ -177,7 +177,7 @@ display: none;
 	 position: relative;
 	 background: rgba(239, 239, 231, 0.836);
 	 text-align: center;
-	 padding: 0 2em 6rem 2rem;
+	 padding: 0 2em 6rem;
 }
 
  .et-hero-tabs h1, .et-slide h1, .grid h1 {
@@ -221,11 +221,15 @@ display: none;
 	 font-size: 0.8rem;
 }
 
- .et-hero-tab:hover {
+/* Will not hover if not supported */
+@media screen and (hover: hover) {
+.et-hero-tab:hover {
 	 color: white;
 	 background: rgb(118, 196, 182);
 	 transition: all 0.5s ease;
 }
+}
+ 
 
  .et-hero-tab-slider {
 	 position: absolute;
