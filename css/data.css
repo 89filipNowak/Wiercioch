@@ -133,7 +133,7 @@ display: none;
 	max-width: 560px;
 	padding:2rem 15px;
 	transition: transform 0.3s ease-in-out;
-	width: 40vw;
+	width: 47vw;
 }
 
  .player__YT{
@@ -142,7 +142,7 @@ display: none;
 	max-width: 560px;
 	padding:2rem 15px;
 	transition: transform 0.3s ease-in-out;
-	width: 40vw;
+	width: 47vw;
 }
 
 .audio-jungle__img:hover {
@@ -157,7 +157,7 @@ display: none;
 	
 @media screen and (max-width: 800px) {
 	.audio-jungle__img, .player, .player__fb {
-		min-width: 70vw;
+		min-width: 90vw;
 		padding: 1rem 1rem;
 	}
 }
@@ -186,7 +186,7 @@ display: none;
 	 flex-direction: column;
 	 justify-content: center;
 	 min-height: 100vh;
-	 padding: 0 2em 6rem;
+	 /* padding: 0 2em 6rem; */
 	 position: relative;
 	 text-align: center;
 }
@@ -209,6 +209,7 @@ display: none;
 	justify-content: center;
 	letter-spacing: 0.1rem;
 	transition: all 0.5s ease;
+	
 }
 
 /* Will not hover if not supported */
