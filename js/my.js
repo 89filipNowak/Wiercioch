@@ -85,7 +85,6 @@ $(document).ready(function(){
             $('.et-hero-tab-slider').css('width', width);
             $('.et-hero-tab-slider').css('left', left);
         }
-        
     }
     
     new StickyNavigation();
@@ -95,6 +94,4 @@ $(document).ready(function(){
     $(window).on('beforeunload', function(){
           $(window).scrollTop(0);
     });
-
-  
 })
