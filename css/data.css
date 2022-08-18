@@ -190,6 +190,22 @@ display: none;
 	}
 }
 
+.info {
+	max-width: 60vw;
+	line-height: 1.3rem;
+
+} 
+
+@media screen and (max-width: 800px) {
+	.info {
+		max-width: 80vw;
+	}
+
+	h3 {
+		font-size: 2.5rem ;
+	}
+}
+
 /* Navbar */
  .et-hero-tabs, .et-slide {
 	 /*TODO: zmiana żeby nie zakrywało playerów */
@@ -243,8 +259,8 @@ display: none;
 }
 
  .et-hero-tabs h3, .et-slide h3, .grid h3 {
-	 font-size: 1rem;
-	 letter-spacing: 0.3rem;
+	font-size: 1rem;
+	 letter-spacing: 0.2rem;
 	 opacity: 0.6;
 }
 
