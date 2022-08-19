@@ -193,8 +193,12 @@ display: none;
 .info {
 	max-width: 60vw;
 	line-height: 1.3rem;
-
+	opacity: 0.6;
 } 
+
+a {
+	color: rgb(69, 160, 143);
+}
 
 @media screen and (max-width: 800px) {
 	.info {
@@ -212,12 +216,14 @@ display: none;
 	 align-items: center;
 	 background: rgba(239, 239, 231, 0.836);
 	 display: flex;
+	 
 	 flex-direction: column;
 	 justify-content: center;
 	 min-height: 100vh;
 	 /* padding: 0 2em 6rem; */
 	 position: relative;
 	 text-align: center;
+	
 	}
 	
 	.et-hero-tab-slider {
@@ -231,7 +237,7 @@ display: none;
 	
 	.et-hero-tab {
 	align-items: center;
-	color: #000;
+	color: rgba(0, 0, 0, 0.774);
 	display: flex;
 	flex: 1;
 	font-size: 0.8rem;
@@ -255,7 +261,8 @@ display: none;
 	 font-size: 2rem;
 	 letter-spacing: 1rem;
 	 margin: 0;
-	 padding: 2rem 0;
+	 padding: 2rem 0; 
+	 opacity: 0.6;
 }
 
  .et-hero-tabs h3, .et-slide h3, .grid h3 {
